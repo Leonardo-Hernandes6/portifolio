@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { ActionButton } from "../ActionButton/action_button";
 import { HeaderContainer } from "./style";
 
@@ -16,25 +17,27 @@ export const Header = ({
   setSelected,
   theme,
 }: IHeader) => {
+  const { t } = useTranslation();
+
   return (
     <HeaderContainer>
       <ActionButton
-        title='About'
+        title={t("about")}
         option={0}
         isSelected={isAboutSelected}
         setSelected={setSelected}
         theme={theme}
       />
       <ActionButton
-        title='Experience'
+        title={t("experience")}
         option={1}
         isSelected={isExperienceSelected}
         setSelected={setSelected}
         theme={theme}
       />
       <ActionButton
+        title={t("projects")}
         option={2}
-        title='Projects'
         isSelected={isProjectSelected}
         setSelected={setSelected}
         theme={theme}
