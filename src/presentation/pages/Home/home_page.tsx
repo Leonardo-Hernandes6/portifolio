@@ -1,4 +1,5 @@
 import { Header } from "../../components/Header/header";
+import { ChangeThemeButton } from "./components/changeThemeButton/changeThemeButton";
 import { Profile } from "./components/Profile/profile";
 import { ScrollView } from "./components/ScrollView/scroll_view";
 import { useHomeViewModel } from "./home_view_model";
@@ -11,6 +12,7 @@ export const HomePage = () => {
     isProjectSelected,
     setSelected,
     theme,
+    setNewTheme,
   } = useHomeViewModel();
 
   return (
@@ -22,6 +24,7 @@ export const HomePage = () => {
         setSelected={setSelected}
         theme={theme}
       />
+      <ChangeThemeButton theme={theme} setTheme={setNewTheme} />
       <HomeContentContainer>
         <Profile theme={theme} />
         <ScrollView theme={theme} />

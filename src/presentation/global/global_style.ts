@@ -9,6 +9,7 @@ export default createGlobalStyle`
 
   :root {
     --white: #BEBEBEFF;
+    --yellow: #CFAC0EFF;
     --darkBlue: #001f3f;
     --disabled: #5F5F5FFF;
   
