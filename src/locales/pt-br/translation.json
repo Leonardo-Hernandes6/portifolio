@@ -1,5 +1,16 @@
 {
   "about": "Sobre",
   "experience": "Experiência",
-  "projects": "Projetos"
+  "projects": "Projetos",
+  "hiIm": "Olá, me chamo",
+  "softwareEnginner": "Desenvolvedor de Software",
+  "age": "Idade",
+  "email": "Email",
+  "from": "De",
+  "aboutMe": "Sobre mim",
+  "aboutMeText1": "Atuei como Desenvolvedor na área Web e Mobile, com experiência em projetos para Android e iOS. Trabalhei em diversos sistemas, como plataformas de segurança e aprendizado, atuando tanto no front-end quanto no back-end com foco em tecnologias como React, TypeScript, Node.js e Flutter. Participei de todas as etapas do desenvolvimento, desde a codificação até o deploy em servidores e, no caso de aplicativos móveis, nas lojas (Google Play e Apple Store).",
+  "aboutMeText2": "Desenvolvi soluções inovadoras, como um sistema de monitoramento de sensores via BLE (Bluetooth Low Energy), utilizado para garantir o transporte seguro de vacinas no Brasil. Também participei da criação de plataformas de gestão e aprendizado empresarial, aplicando sempre boas práticas de Clean Architecture e DevOps.",
+  "aboutMeText3": "Atualmente, sou desenvolvedor na empresa NTSEC, onde continuo a aplicar minhas habilidades em projetos desafiadores e com grande impacto.",
+  "yearsOfExperience": "Anos de experiência",
+  "companiesWorked": "Empresas trabalhadas"
 }

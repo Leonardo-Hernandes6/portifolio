@@ -12,7 +12,7 @@ export default createGlobalStyle`
     --darkBlue: #001f3f;
     --disabled: #5F5F5FFF;
   
-    --darkBackground: linear-gradient(135deg, #001f3f, #003366);
+    --darkBackground: linear-gradient(to right, #141e30, #243b55);;
     --lightBackground: linear-gradient(135deg, #f0f4f8, #e0e6f1);
   }
 `;

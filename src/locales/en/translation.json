@@ -1,5 +1,16 @@
 {
   "about": "About",
   "experience": "Experience",
-  "projects": "Projects"
+  "projects": "Projects",
+  "hiIm": "Hi, I'm",
+  "softwareEnginner": "Software Enginner",
+  "age": "Age",
+  "email": "Email",
+  "from": "From",
+  "aboutMe": "About me",
+  "aboutMeText1": "I have worked as a Developer in the Web and Mobile areas, with experience in projects for both Android and iOS. I have worked on various systems, such as security and learning platforms, acting both on the front-end and back-end with a focus on technologies such as React, TypeScript, Node.js, and Flutter. I participated in all stages of development, from coding to deployment on servers and, in the case of mobile applications, in app stores (Google Play and Apple Store).",
+  "aboutMeText2": "I have developed innovative solutions, such as a sensor monitoring system via BLE (Bluetooth Low Energy), used to ensure the safe transport of vaccines in Brazil. I also participated in the creation of management and learning platforms, always applying best practices in Clean Architecture and DevOps.",
+  "aboutMeText3": "I am currently a developer at NTSEC, where I continue to apply my skills in challenging and impactful projects.",
+  "yearsOfExperience": "Years of experience",
+  "companiesWorked": "Companies Worked"
 }
