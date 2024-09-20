@@ -1,10 +1,14 @@
-import { AboutMe } from "../AboutMe/about-me";
+import { AboutMe } from "../AboutMe/about_me";
 import { ScrollViewContainer } from "./style";
 
-export const ScrollView = () => {
+interface IScrollView {
+  theme: string;
+}
+
+export const ScrollView = ({ theme }: IScrollView) => {
   return (
     <ScrollViewContainer>
-      <AboutMe />
+      <AboutMe theme={theme} />
     </ScrollViewContainer>
   );
 };

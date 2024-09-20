@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useDeviceTheme } from "../../../application/hooks/useDeviceTheme";
 
 export const useHomeViewModel = () => {
   const [isAboutSelected, setIsAboutSelected] = useState<boolean>(true);
@@ -7,7 +6,7 @@ export const useHomeViewModel = () => {
     useState<boolean>(false);
   const [isProjectSelected, setIsProjectSelected] = useState<boolean>(false);
   // const theme = useDeviceTheme();
-  const theme = "dark";
+  const theme = "light";
 
   const setSelected = (option: number) => {
     switch (option) {

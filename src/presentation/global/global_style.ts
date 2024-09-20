@@ -8,11 +8,11 @@ export default createGlobalStyle`
   }
 
   :root {
-    --white: #f5f5f5;
+    --white: #BEBEBEFF;
     --darkBlue: #001f3f;
     --disabled: #5F5F5FFF;
   
     --darkBackground: linear-gradient(to right, #141e30, #243b55);;
-    --lightBackground: linear-gradient(135deg, #f0f4f8, #e0e6f1);
+    --lightBackground: linear-gradient(to right, rgba(196,196,196,1) 0%, rgba(240,240,244,1) 100%, rgba(0,212,255,1) 100%);;
   }
 `;

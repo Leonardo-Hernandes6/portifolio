@@ -14,23 +14,34 @@ import {
   ProfileTitle,
 } from "./style";
 
-export const Profile = () => {
+interface IProfile {
+  theme: string;
+}
+
+export const Profile = ({ theme }: IProfile) => {
   const { t } = useTranslation();
 
   return (
     <ProfileContainer>
       <ProfileCard />
-      <ProfileTitle>{t("hiIm")} Leonardo Hernandes</ProfileTitle>
-      <ProfileSubitle> {t("softwareEnginner")} </ProfileSubitle>
+      <ProfileTitle theme={theme}>{t("hiIm")} Leonardo Hernandes</ProfileTitle>
+      <ProfileSubitle theme={theme}> {t("softwareEnginner")} </ProfileSubitle>
 
       <ProfileItemsContainer>
-        <ProfileItems> {t("email")}: leoxhpp@gmail.com </ProfileItems>
-        <ProfileItems> {t("age")}: 23 anos </ProfileItems>
-        <ProfileItems> {t("from")}: Brasília, Distrito Federal </ProfileItems>
+        <ProfileItems theme={theme}>
+          {" "}
+          {t("email")}: leoxhpp@gmail.com{" "}
+        </ProfileItems>
+        <ProfileItems theme={theme}> {t("age")}: 23 anos </ProfileItems>
+        <ProfileItems theme={theme}>
+          {" "}
+          {t("from")}: Brasília, Distrito Federal{" "}
+        </ProfileItems>
       </ProfileItemsContainer>
 
       <ProfileActionsContainer>
         <ProfileActionsButton
+          theme={theme}
           onClick={() =>
             window.open("https://www.linkedin.com/in/leonardo-hernandes6/")
           }
@@ -39,11 +50,13 @@ export const Profile = () => {
         </ProfileActionsButton>
 
         <ProfileActionsButton
+          theme={theme}
           onClick={() => window.open("https://github.com/Leonardo-Hernandes")}
         >
           <FaSquareGithub size={"2rem"} />
         </ProfileActionsButton>
         <ProfileActionsButton
+          theme={theme}
           onClick={() => window.open("https://wa.me/5561983788091")}
         >
           <FaSquareWhatsapp size={"2rem"} />

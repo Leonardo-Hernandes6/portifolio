@@ -23,8 +23,8 @@ export const HomePage = () => {
         theme={theme}
       />
       <HomeContentContainer>
-        <Profile />
-        <ScrollView />
+        <Profile theme={theme} />
+        <ScrollView theme={theme} />
       </HomeContentContainer>
     </HomeContainer>
   );

@@ -2,18 +2,24 @@ import styled from "styled-components";
 
 import breakpoint from "../../../../global/breakpoints";
 
+interface IAboutMe {
+  theme: string;
+}
+
 export const AboutMeContainer = styled.div``;
 
-export const AboutMeText = styled.p`
-  color: var(--white);
+export const AboutMeText = styled.p<IAboutMe>`
+  color: ${(props) =>
+    props.theme === "dark" ? "var(--white)" : "var(--darkBlue)"};
   font-size: 1.1rem;
   font-weight: 400;
   margin-top: 1rem;
   line-height: 1.35rem;
 `;
 
-export const AboutMeTitle = styled.p`
-  color: var(--white);
+export const AboutMeTitle = styled.p<IAboutMe>`
+  color: ${(props) =>
+    props.theme === "dark" ? "var(--white)" : "var(--darkBlue)"};
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -39,13 +45,15 @@ export const AboutMeSpecs = styled.div`
   align-items: center;
 `;
 
-export const AboutMeSpecsTitle = styled.p`
+export const AboutMeSpecsTitle = styled.p<IAboutMe>`
   font-size: 2rem;
   font-weight: bold;
-  color: var(--white);
+  color: ${(props) =>
+    props.theme === "dark" ? "var(--white)" : "var(--darkBlue)"};
 `;
 
-export const AboutMeSpecsSubTitle = styled.p`
+export const AboutMeSpecsSubTitle = styled.p<IAboutMe>`
   text-align: center;
-  color: var(--white);
+  color: ${(props) =>
+    props.theme === "dark" ? "var(--white)" : "var(--darkBlue)"};
 `;

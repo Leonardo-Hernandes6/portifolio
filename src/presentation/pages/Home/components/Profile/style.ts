@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import breakpoint from "../../../../global/breakpoints";
 
+interface IProfile {
+  theme: string;
+}
+
 export const ProfileContainer = styled.div`
   flex-direction: column;
   @media (${breakpoint.sm1}) {
@@ -10,8 +14,9 @@ export const ProfileContainer = styled.div`
   }
 `;
 
-export const ProfileTitle = styled.p`
-  color: var(--white);
+export const ProfileTitle = styled.p<IProfile>`
+  color: ${(props) =>
+    props.theme === "dark" ? "var(--white)" : "var(--darkBlue)"};
   font-size: 1.4rem;
   font-weight: 600;
   margin-top: 2rem;
@@ -21,8 +26,9 @@ export const ProfileTitle = styled.p`
   }
 `;
 
-export const ProfileSubitle = styled.p`
-  color: var(--white);
+export const ProfileSubitle = styled.p<IProfile>`
+  color: ${(props) =>
+    props.theme === "dark" ? "var(--white)" : "var(--darkBlue)"};
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 0.4rem;
@@ -32,8 +38,9 @@ export const ProfileItemsContainer = styled.div`
   margin-top: 1rem;
 `;
 
-export const ProfileItems = styled.p`
-  color: var(--white);
+export const ProfileItems = styled.p<IProfile>`
+  color: ${(props) =>
+    props.theme === "dark" ? "var(--white)" : "var(--darkBlue)"};
   font-size: 1.1rem;
   font-weight: 400;
   margin-top: 0.4rem;
@@ -50,12 +57,14 @@ export const ProfileActionsContainer = styled.div`
   }
 `;
 
-export const ProfileActionsButton = styled.button`
+export const ProfileActionsButton = styled.button<IProfile>`
   padding: 0;
   margin: 0.4rem 0.2rem;
   background-color: transparent;
   border: none;
-  color: white;
+  color: ${(props) =>
+    props.theme === "dark" ? "var(--white)" : "var(--darkBlue)"};
+
   cursor: pointer;
 
   transition: color 0.6s ease;
