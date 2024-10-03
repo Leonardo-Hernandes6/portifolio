@@ -32,7 +32,10 @@ export const Profile = ({ theme }: IProfile) => {
           {" "}
           {t("email")}: leoxhpp@gmail.com{" "}
         </ProfileItems>
-        <ProfileItems theme={theme}> {t("age")}: 23 anos </ProfileItems>
+        <ProfileItems theme={theme}>
+          {" "}
+          {t("age")}: 23 {t("years")}{" "}
+        </ProfileItems>
         <ProfileItems theme={theme}>
           {" "}
           {t("from")}: Brasília, Distrito Federal{" "}

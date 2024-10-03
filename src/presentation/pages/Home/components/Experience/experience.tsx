@@ -1,16 +1,21 @@
 import { ExperienceCard } from "../../../../components/ExperienceCard/experience_card";
+import { useTranslatedExperiences } from "../../../../resources/use_translated_experiences";
 import { ExperienceContainer, ExperienceTitle } from "./style";
-import { Experiences } from "../../../../resources/experience";
+import { useTranslation } from "react-i18next";
 
 interface IExperience {
   theme: string;
 }
 
 export const Experience = ({ theme }: IExperience) => {
+  const experiences = useTranslatedExperiences();
+
+  const { t } = useTranslation();
+
   return (
     <ExperienceContainer>
-      <ExperienceTitle theme={theme}>Experiência</ExperienceTitle>
-      {Experiences.map((experience, index) => (
+      <ExperienceTitle theme={theme}> {t("experience")} </ExperienceTitle>
+      {experiences.map((experience, index) => (
         <ExperienceCard
           key={index}
           date={experience.date}

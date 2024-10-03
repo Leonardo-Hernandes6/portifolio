@@ -12,5 +12,18 @@
   "aboutMeText2": "I have developed innovative solutions, such as a sensor monitoring system via BLE (Bluetooth Low Energy), used to ensure the safe transport of vaccines in Brazil. I also participated in the creation of management and learning platforms, always applying best practices in Clean Architecture and DevOps.",
   "aboutMeText3": "I am currently a developer at NTSEC, where I continue to apply my skills in challenging and impactful projects.",
   "yearsOfExperience": "Years of experience",
-  "companiesWorked": "Companies Worked"
+  "companiesWorked": "Companies Worked",
+  "years": "years",
+  "atTheMoment": "at the moment",
+  "wordBeforeYear": " ",
+  "december": "dec",
+  "october": "oct",
+  "ntsecTitle": "Full Stack Developer - NTSEC",
+  "ntsecDescription": "I develop web and mobile systems for internal use, working on both the front-end and back-end. My focus is on creating efficient solutions for different areas of the company, helping to improve operations and productivity. I use modern technologies to develop, implement, and maintain applications that meet the needs of internal users.",
+  "soulprimeTitle": "Front-end Flutter Developer - Soulprime",
+  "soulprimeDescription": "I worked on the front-end development of a Flutter application for a Web3-based social network. I was responsible for implementing intuitive interfaces and integrating decentralized technologies, ensuring a smooth and secure user experience.",
+  "3778Title": "Full Stack Developer - 3778",
+  "3778Description": "At 3778, a company focused on technology solutions for the healthcare sector, I worked as a full stack developer using Node.js, React, TypeScript, and GraphQL. I was responsible for developing systems that integrate various platforms, focusing on efficiency and scalability. I worked on both the back-end, building robust APIs, and the front-end, implementing responsive and dynamic interfaces to optimize the user experience.",
+  "synapseTitle": "Full Stack Developer - Synapse",
+  "synapseDescription": "At Synapse, a company specialized in innovative technology solutions, I worked both on supporting already delivered applications and on developing new applications from scratch. One of the standout projects was the Ares app, developed to monitor the transportation of Pfizer vaccines in Brazil, using BLE (Bluetooth Low Energy) technology to ensure appropriate temperature and humidity conditions. My work involved everything from the initial architecture to the implementation and maintenance of the applications, always focusing on quality and performance."
 }
