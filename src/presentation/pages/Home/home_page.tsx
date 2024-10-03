@@ -13,6 +13,8 @@ export const HomePage = () => {
     setSelected,
     theme,
     setNewTheme,
+    aboutRef,
+    experienceRef,
   } = useHomeViewModel();
 
   return (
@@ -27,7 +29,11 @@ export const HomePage = () => {
       <ChangeThemeButton theme={theme} setTheme={setNewTheme} />
       <HomeContentContainer>
         <Profile theme={theme} />
-        <ScrollView theme={theme} />
+        <ScrollView
+          theme={theme}
+          aboutRef={aboutRef}
+          experienceRef={experienceRef}
+        />
       </HomeContentContainer>
     </HomeContainer>
   );

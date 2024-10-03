@@ -19,7 +19,9 @@ export const ActionButton = ({
     <ActionButtonContainer theme={theme}>
       <ActionButtonText
         isSelected={isSelected}
-        onClick={() => setSelected(option)}
+        onClick={() => {
+          setSelected(option);
+        }}
         theme={theme}
       >
         {title}

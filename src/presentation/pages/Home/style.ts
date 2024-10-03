@@ -18,7 +18,7 @@ export const HomeContainer = styled.div<IHomeContainer>`
 `;
 
 export const HomeContentContainer = styled.div`
-  width: 60vw;
+  width: 70vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
