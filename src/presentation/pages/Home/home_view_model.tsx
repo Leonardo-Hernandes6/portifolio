@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import { useDeviceTheme } from "../../../application/hooks/useDeviceTheme";
 
 export const useHomeViewModel = () => {
   const [isAboutSelected, setIsAboutSelected] = useState<boolean>(true);
